@@ -43,6 +43,14 @@ p {
 .unused-title {
     color: var(--main-bg-color);
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a {
+    display: block;
+}
 /*---------------------HEADER-------------------------*/
 /* ------navbar*/
 .navbar {
@@ -122,7 +130,7 @@ p {
 /*-----------main_HomePage.html-------------*/
 /*-----block Hero*/
 .homepage-hero-block {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     text-align: center;
@@ -217,7 +225,7 @@ p {
 
 /*------block OurTeam*/
 .homepage-team-block {
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -247,8 +255,11 @@ p {
 .homepage-team-list-item:not(:last-child) {
     margin-right: 30px;
 }
-.homepage-surname-title {
+.block-title-team {
+    margin-bottom: 30px;
     margin-top: 30px;
+}
+.homepage-surname-title {
     margin-bottom: 10px;
 
     font-weight: 500;
@@ -259,8 +270,6 @@ p {
     color: var(--main-text-color);
 }
 .homepage-position {
-    margin-bottom: 30px;
-
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -309,10 +318,6 @@ p {
 }
 .list-portfolio-item {
     width: 370px;
-    padding-bottom: 20px;
-}
-.list-portfolio-item > .titles {
-    margin-top: 20px;
 }
 .list-portfolio-item:not(:nth-child(3n)) {
     margin-right: 30px;
@@ -324,9 +329,11 @@ p {
     text-decoration: none;
     font-style: normal;
 }
+.block-title-portfolio {
+    margin: 20px 24px;
+}
 .project-name {
-    margin-top: 20px;
-    margin-left: 24px;
+    margin-bottom: 4px;
 
     font-weight: 700;
     font-size: 18px;
@@ -335,9 +342,6 @@ p {
     color: var(--main-text-color);
 }
 .project-discription {
-    margin-top: 4px;
-    margin-left: 24px;
-
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
@@ -346,19 +350,20 @@ p {
 
 /*----------------FOOTER--------------------*/
 .footer {
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 60px;
 
     background: var(--dark-bg-color);
 }
+.footer .logo {
+    margin-bottom: 20px;
+}
 .logo-part-in-footer {
     color: var(--white-text-color);
 }
-.block-address-in-footer {
-    margin-top: 20px;
-}
+
 .address-list-in-footer {
     font-style: normal;
 }
@@ -375,7 +380,6 @@ p {
     color: var(--contacts-header-text-color);
     text-decoration: none;
 }
-.address-in-footer-element:first-child {
+.address-list-in-footer list:not(:last-child) {
     margin-bottom: 9px;
-    margin-top: 9px;
 }
