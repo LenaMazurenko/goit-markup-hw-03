@@ -40,6 +40,10 @@ p {
     margin: 0 auto;
     padding: 0 15px;
 }
+.container-position {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .unused-title {
     color: var(--main-bg-color);
 }
@@ -137,7 +141,7 @@ a {
     height: 600px;
     padding-top: 200px;
     text-align: center;
-    margin: 0 auto 94px;
+    margin: 0 auto;
 
     background-color: var(--dark-bg-color);
 }
@@ -177,10 +181,6 @@ a {
 }
 
 /*-----block Advantages*/
-.homepage-advantages-block {
-    margin-bottom: 94px;
-}
-
 .homepage-advantages-list {
     display: flex;
 }
@@ -206,7 +206,7 @@ a {
 
 /*-----block Make*/
 .homepage-make-block {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 .homepage-make-list {
     display: flex;
@@ -230,8 +230,6 @@ a {
 .homepage-team-block {
     max-width: 1600px;
     margin: 0 auto;
-    padding-top: 94px;
-    padding-bottom: 94px;
 
     background-color: var(--button-bg-color);
 }
@@ -281,10 +279,6 @@ a {
 }
 
 /*---------------------main Portfolio.html--------------------*/
-.portfolio-section {
-    margin-top: 94px;
-}
-
 /*-----list Filter*/
 .list-filter {
     display: flex;
