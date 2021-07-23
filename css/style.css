@@ -377,6 +377,6 @@ a {
     color: var(--contacts-header-text-color);
     text-decoration: none;
 }
-.address-list-in-footer list:not(:last-child) {
+.address-list-in-footer li:not(:last-child) {
     margin-bottom: 9px;
 }
